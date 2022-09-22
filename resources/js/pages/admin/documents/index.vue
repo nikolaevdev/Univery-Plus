@@ -1,0 +1,48 @@
+<template>
+  <div class="row">
+    <div class="col-12">
+      <h5 class="mb-3 text-dark">{{$t('admin_documents')}}</h5>
+      <div class="bg-light p-3">
+	      <div class="d-flex flex-row">
+          <router-link class="py-2 px-3 mr-2 border rounded-pill tab-link" :to="{ name: tab.route }"  active-class="bg-primary text-white"  v-for="tab in tabs" :key="tab.name">
+              {{ tab.text }}
+          </router-link>
+        </div>
+		  </div>
+    </div>
+
+    <div class="col-12">
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  middleware: 'auth',
+
+  computed: {
+    tabs () {
+      return [
+        {
+          name: 'name',
+          text: this.$t('admin_documents'),
+          route: 'admin.documents.home'
+        },
+        {
+          name: 'categories',
+          text: this.$t('admin_documents_categories'),
+          route: 'admin.documents.categories'
+        },
+        {
+          name: 'add',
+          text: this.$t('admin_documents_add'),
+          route: 'admin.documents.add'
+        }
+      ]
+    }
+  }
+}
+</script>

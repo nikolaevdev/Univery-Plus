@@ -1,0 +1,7 @@
+import './axios'
+import './fontawesome'
+import './vmodal'
+import './vnotification'
+import './eventHab'
+import './localdata'
+import 'bootstrap'

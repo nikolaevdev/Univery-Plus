@@ -1,0 +1,38 @@
+// Body
+$body-bg: #f1f1f1;
+
+// Cards
+$card-spacer-x: 0.9375rem;
+$card-spacer-y: 0.625rem;
+$card-cap-bg: #fbfbfb;
+$card-border-color: #e8eced;
+
+// Borders
+$border-radius: .125rem;
+$border-radius-lg: .2rem;
+$border-radius-sm: .15rem;
+
+// Nav Pills
+$nav-pills-border-radius: 0;
+
+$color-primary: #0088e7;
+$color-secondary: #2b2b2b;
+$color-success: #00762c;
+$color-info: #009eda;
+$color-danger: #b12c00;
+$color-warning: #da7e00;
+$color-light: #e8e9ea;
+$color-dark: #545556;
+
+//Project enrole
+$app_default: #00aa2c;
+$app_default_2: #8d8d8d;
+
+$primary:       $color-primary !default;
+$secondary:     $color-secondary !default;
+$success:       $color-success !default;
+$info:          $color-info !default;
+$warning:       $color-warning !default;
+$danger:        $color-danger !default;
+$light:         $color-light !default;
+$dark:          $color-dark !default;
